@@ -44,6 +44,7 @@ describe("options", () => {
         "outputTypeAnnotations": false,
         "outputTypeRegistry": false,
         "removeEnumPrefix": false,
+        "removeEnumValuePrefix": false,
         "returnObservable": false,
         "rpcAfterResponse": false,
         "rpcBeforeRequest": false,
