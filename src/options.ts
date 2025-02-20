@@ -70,6 +70,7 @@ export type Options = {
   stringEnums: boolean;
   constEnums: boolean;
   removeEnumPrefix: boolean;
+  removeEnumValuePrefix: boolean;
   enumsAsLiterals: boolean;
   outputClientImpl: boolean | "grpc-web";
   outputServices: ServiceOption[];
@@ -143,6 +144,7 @@ export function defaultOptions(): Options {
     stringEnums: false,
     constEnums: false,
     removeEnumPrefix: false,
+    removeEnumValuePrefix: false,
     enumsAsLiterals: false,
     outputClientImpl: true,
     outputServices: [],
