@@ -268,5 +268,8 @@ export function getMemberName(
 }
 
 function getValueName(ctx: Context, fullName: string, valueDesc: EnumValueDescriptorProto): string {
+  if (ctx.options.removeEnumValuePrefix) {
+    return valueDesc.name.replace(`${camelToSnake(fullName)}_`, "");
+  }
   return valueDesc.name;
 }
